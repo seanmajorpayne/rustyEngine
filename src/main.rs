@@ -1,6 +1,6 @@
 mod vector;
-mod window;
+mod lib;
 
 fn main() {
-    window::run();
+    pollster::block_on(lib::run());
 }
